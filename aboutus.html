@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body class="bg-black">
+
+        <!-- create a nav bar with the following items: -->
+
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#">
+                    <img src="img/fast-food.png" alt="" width="30" height="40" class="d-inline-block align-text-top"> 
+                   &nbsp; The food stall
+                </a>
+                <button class="navbar-toggler text-white border border-1 border-secondary bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item border border-2 border-secondary rounded-pill bg-white text-center ps-3 pe-3 m-1 shadow-lg">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item border border-2 border-secondary rounded-pill bg-white text-center ps-3 pe-3 shadow-lg m-1">
+                            <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item border border-2 border-secondary rounded-pill bg-white text-center ps-3 pe-3 shadow-lg m-1">
+                            <a class="nav-link active" aria-current="page" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item border border-2 border-secondary rounded-pill bg-white text-center ps-3 pe-3 shadow-lg m-1">
+                            <a class="nav-link active" aria-current="page" href="contactus.html">Contact Us</a>
+                        </li>
+    
+                    </ul>
+                   
+                </div>
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item text-white fs-1" data-bs-toggle="modal" data-bs-target="#login">
+                        <i class="bi bi-box-arrow-in-right"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <!-- end nav bar section  -->
+
+        <!-- create a modal for login and signup -->
+
+    <div class="modal" id="login">
+        <div class="modal-dialog">
+            
+            <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header bg-secondary">
+              <h4 class="modal-title text-white">Login</h4>
+              <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal Body -->
+            <div class="modal-body">
+
+                <form>
+                    <div class="m-2">
+                        <label for="email" class="form-label text-dark">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="m-2">
+                        <label for="password" class="form-label text-dark">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                    </div>
+                </form>
+                
+            </div>
+            <!-- Model Footer-->
+            <div class="modal-footer bg-secondary">
+                <button type="button" class="btn btn-dark">Login</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+       
+        <!-- start Accordion section-->
+
+        <!--div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+
+                </div>
+
+                <div class="col-sm-10 border border-secondary">
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                What is fast food?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant or store with frozen, preheated or precooked ingredients and served in packaging for take-out/takeaway.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Why fast food are popular food?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Fast food is popular because the food is inexpensive, convenient, and tastes good. Fast food may include refined grains instead of whole grains, contain saturated fat, cholesterol, and added sugar, and it can be high in sodium which is used as a preservative and makes food more flavorful and satisfying.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                What category is fast food?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Fast food is considered a quick-service restaurant business that serves food that can be prepared quickly (like burgers, chicken strips, or sandwiches), cheaply, and with minimal table service. It is part of the larger food industry that also contains regular restaurants.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                What are fast foods names?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Types of Fast Food
+                                Hamburger.
+                                Cheeseburger.
+                                Sandwich.
+                                Milkshake.
+                                Muffin.
+                                Burrito.
+                                Taco.
+                                Hot dog.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                What are characteristics of fast food?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">fast food typically refers to a foodservice business model that focuses on affordability, speed of service and convenience over the nutritional content and quality of the food.</div>
+                            </div>
+                          </div>
+                            
+                      </div>
+            
+            
+
+                </div>
+            </div>
+
+        </div>
+
+ 
+
+        <end accordion section-->
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-sm-6">
+            <br>
+            <br>
+            <h2 class="text-center text-warning">Serving up delicious fast food in </h2>
+            <br>
+            <h1 class="text-center text-warning">Mumbai City Since 1980</h1>
+            <br>
+            <br>
+
+            <h4 class="text-center text-info">We pride ourselves on sourcing incredible ingredients from ranchers, framers, bakers, and food purveyors who all share our values..!</h4>
+          </div>
+      
+
+        
+          <div class="col-sm-6" >
+            <img src="img/photo-8.jpg" class="rounded-top" alt="..." height="500px" width="500px">
+
+          </div>
+        </div>
+       
+
+
+      </div>
+        
+    
+</body>
+</html>
